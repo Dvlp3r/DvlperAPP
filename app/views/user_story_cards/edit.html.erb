@@ -2,5 +2,32 @@
 
 <%= render 'form', user_story_card: @user_story_card %>
 
+
+<hr>
+<%= form_for @user_story_card do |f| %>
+Feature
+
+<%= f.fields_for :feature do |features_form| %>
+
+  <div class="field">
+    <%= features_form.label :name %>
+    <%= features_form.text_field :name %>
+  </div>
+
+
+<div class="field">
+  <%= features_form.label :description %>
+  <%= features_form.text_field :description %>
+</div>
+
+
+<% end %>
+
+<div class="actions">
+  <%= f.submit "Add feature" %>
+</div>
+<% end %>
+
+
 <%= link_to 'Show', @user_story_card %> |
 <%= link_to 'Back', user_story_cards_path %>

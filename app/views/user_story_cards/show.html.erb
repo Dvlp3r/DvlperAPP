@@ -1,29 +1,48 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>App:</strong>
-  <%= @user_story_card.app %>
-</p>
+<div id="user_story" class="container">
+<div class="row">
+  <div class="col-sm-12 col-md-8">
+    <p>
+      <strong>App:</strong>
+      <%= @user_story_card.app %>
+    </p>
 
-<p>
-  <strong>Maintitle:</strong>
-  <%= @user_story_card.maintitle %>
-</p>
+    <p>
+      <strong>Maintitle:</strong>
+      <%= @user_story_card.maintitle %>
+    </p>
 
-<p>
-  <strong>Persona:</strong>
-  <%= @user_story_card.persona %>
-</p>
+    <p>
+      <strong>Persona:</strong>
+      <%= @user_story_card.persona %>
+    </p>
 
-<p>
-  <strong>Trait:</strong>
-  <%= @user_story_card.trait %>
-</p>
+    <p>
+      <strong>Trait:</strong>
+      <%= @user_story_card.trait %>
+    </p>
 
-<p>
-  <strong>Goal:</strong>
-  <%= @user_story_card.goal %>
-</p>
+    <p>
+      <strong>Goal:</strong>
+      <%= @user_story_card.goal %>
+    </p>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <p>
+      <strong>Feature:</strong>
+      <%= @user_story_card.features.first.name %>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
 
 <%= link_to 'Edit', edit_user_story_card_path(@user_story_card) %> |
 <%= link_to 'Back', user_story_cards_path %>

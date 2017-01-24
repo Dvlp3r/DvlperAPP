@@ -69,6 +69,6 @@ class UserStoryCardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_story_card_params
-      params.require(:user_story_card).permit(:app, :maintitle, :persona, :trait, :goal)
+      params.require(:user_story_card).permit(:app, :maintitle, :persona, :trait, :goal, features_attributes: [:id, :name, :description])
     end
 end
