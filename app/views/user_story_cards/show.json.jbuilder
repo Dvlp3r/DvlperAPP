@@ -1,0 +1,1 @@
+json.partial! "user_story_cards/user_story_card", user_story_card: @user_story_card

@@ -1,0 +1,2 @@
+class UserStoryCard < ApplicationRecord
+end

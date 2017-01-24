@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>App:</strong>
+  <%= @user_story_card.app %>
+</p>
+
+<p>
+  <strong>Maintitle:</strong>
+  <%= @user_story_card.maintitle %>
+</p>
+
+<p>
+  <strong>Persona:</strong>
+  <%= @user_story_card.persona %>
+</p>
+
+<p>
+  <strong>Trait:</strong>
+  <%= @user_story_card.trait %>
+</p>
+
+<p>
+  <strong>Goal:</strong>
+  <%= @user_story_card.goal %>
+</p>
+
+<%= link_to 'Edit', edit_user_story_card_path(@user_story_card) %> |
+<%= link_to 'Back', user_story_cards_path %>

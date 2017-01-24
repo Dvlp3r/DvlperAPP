@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserStoryTest < ActiveSupport::TestCase
+class UserStoryCardTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
